@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-import re,sys,random
+import re,sys, random
 
 class DomainFilter:
     def __init__(self, inputfile):
@@ -20,6 +20,11 @@ class DomainFilter:
             file.write("\n".join(self.domains))
 
 if __name__ == "__main__":
+    if len(sys.argv) < 2:
+        print("Error: No input file provided.")
+        print("Usage: fdomain <input_file>")
+        print("Usage: python3 fdomain.py <input_file>")
+        sys.exit(1)
     inputfile = sys.argv[1]
     domain_filter = DomainFilter(inputfile)
     domain_filter.read_text()
