@@ -11,3 +11,7 @@ This script helps to filter subdomains from a list that may contain irrelevant t
 6. sudo cp fdomain /usr/local/bin
 
 After following these procedures, you can execute this script from the terminal directly.
+
+# Script execution
+
+`fdomain <listurl> `
