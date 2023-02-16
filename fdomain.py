@@ -20,7 +20,7 @@ class DomainFilter:
             file.write("\n".join(self.domains))
 
 if __name__ == "__main__":
-    if len(sys.argv) < 2:
+    if len(sys.argv) < 1:
         print("Error: No input file provided.")
         print("Usage: fdomain <input_file>")
         print("Usage: python3 fdomain.py <input_file>")
