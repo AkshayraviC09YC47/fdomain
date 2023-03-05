@@ -14,4 +14,4 @@ After following these procedures, you can execute this script from the terminal 
 
 # Script execution
 
-`fdomain <listurl> `
+`fdomain <listurl> ` or `cat urls.txt|fdomain`
