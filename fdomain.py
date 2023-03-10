@@ -15,7 +15,7 @@ class DomainFilter:
                 self.text = sys.stdin.read()
             else:
                 print("---> Error: No input file or pipe provided.")
-                print("---> Usage: 'cat urls.txt|beta-fdomain' or 'python3 fdomain.py <input_file>'")
+                print("---> Usage: 'cat urls.txt|fdomain' or 'python3 fdomain.py <input_file>'")
                 sys.exit(1)
 
     def find_domains(self):
